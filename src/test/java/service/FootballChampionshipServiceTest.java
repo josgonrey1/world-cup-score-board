@@ -1,6 +1,5 @@
 package service;
 
-import dto.Team;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -12,7 +11,8 @@ import usecase.GetMatchSummaryUseCase;
 import usecase.StartMatchUseCase;
 import usecase.UpdateScoreUseCase;
 
-import static config.TestMother.*;
+import static config.TestMother.TEAM_CANADA;
+import static config.TestMother.TEAM_MEXICO;
 import static org.mockito.Mockito.verify;
 
 @ExtendWith(MockitoExtension.class)
