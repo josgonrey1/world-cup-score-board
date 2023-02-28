@@ -2,29 +2,17 @@ package service;
 
 import dao.MatchDAO;
 import dto.Match;
-import dto.Team;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import usecase.FinishMatchUseCase;
 import usecase.GetMatchSummaryUseCase;
 import usecase.StartMatchUseCase;
 import usecase.UpdateScoreUseCase;
+import static config.TestMother.*;
 
 import java.util.List;
 
 class FootballChampionshipServiceTestIT {
-
-
-    private static final Team TEAM_MEXICO = new Team("Mexico");
-    private static final Team TEAM_CANADA = new Team("Canada");
-    private static final Team TEAM_SPAIN = new Team("Spain");
-    private static final Team TEAM_BRAZIL = new Team("Brazil");
-    private static final Team TEAM_GERMANY = new Team("Germany");
-    private static final Team TEAM_FRANCE = new Team("France");
-    private static final Team TEAM_URUGUAY = new Team("Uruguay");
-    private static final Team TEAM_ITALY = new Team("Italy");
-    private static final Team TEAM_ARGENTINA = new Team("Argentina");
-    private static final Team TEAM_AUSTRALIA = new Team("Australia");
 
     private FootballChampionshipService footballChampionshipService;
     private MatchDAO matchDAO;
@@ -32,7 +20,6 @@ class FootballChampionshipServiceTestIT {
     private FinishMatchUseCase finishMatchUseCase;
     private UpdateScoreUseCase updateScoreUseCase;
     private GetMatchSummaryUseCase getMatchSummaryUseCase;
-
 
     @BeforeEach
     void setUp() {
